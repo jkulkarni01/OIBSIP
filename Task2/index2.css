@@ -1,0 +1,40 @@
+.img1 img{
+    width: 100%;
+    height: 330px;
+    margin-top: -65px;
+    margin-left: -70px;
+     
+}
+
+td .p1{
+
+    margin-top: -70px;
+}
+
+font .b1{
+    display:inline-flex;
+    color: aliceblue;
+
+}
+
+font .h1{
+    color:brown;
+}
+
+.img2 img{
+    height:400px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+}
+
+td .gradient{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,190,108,1) 42%, rgba(253,187,45,1) 100%); 
+
+}
+font .gradient1{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,190,108,1) 42%, rgba(253,187,45,1) 100%); 
+
+}

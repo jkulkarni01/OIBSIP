@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+    <title>Temperature Converter Website</title>
+</head>
+
+<form>
+    <fieldset>
+        <label><input type="radio" name="choose" value="celsiustofahrenheit" id="c" checked>Celsius to
+            Fahrenheit</label><br>
+        <label><input type="radio" name="choose" value="fahrenheittocelsius" id="f">Fahrenheit to Celsius</label><br>
+        <br>
+        &deg;C: <input type="text" name="celsius" placeholder="Temperature in Celsius" id="celsius"><br>
+        <br>
+        &deg;F: <input type="text" name="fahrenheit" placeholder="Temperature in Fahrenheit" id="fahrenheit"
+            disabled><br>
+        <br>
+        <h2 id="result"></h2>
+    </fieldset>
+</form>
+<script>
+    function chooseCelsius() {
+        document.getElementById("fahrenheit").disabled = true;
+
+        document.getElementById("fahrenheit").value = "";
+    }
+
+    function chooseFahrenheit() {
+        document.getElementById("celsius").disabled = true;
+        document.getElementById("fahrenheit").disabled = false;
+        document.getElementById("celsius").value = "";
+    }
+
+    function convertTemperatures() {
+        if (document.getElementById("celsius").disabled == false) {
+            document.getElementById("result").innerHTML = (document.getElementById("celsius").value * 1.8 + 32).toFixed(1) + "&deg;F";
+        } else {
+            document.getElementById("result").innerHTML = ((document.getElementById("fahrenheit").value - 32) / 1.8).toFixed(1) + "&deg;C";
+        }
+    }
+
+
+    window.onload = function () {
+        document.getElementById("c").onclick = chooseCelsius;
+        document.getElementById("f").onclick = chooseFahrenheit;
+        document.getElementById("celsius").oninput = convertTemperatures;
+        document.getElementById("fahrenheit").oninput = convertTemperatures;
+    }
+</script>
+
+
+

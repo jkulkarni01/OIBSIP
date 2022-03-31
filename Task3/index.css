@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 120%;
+	font-family: 'Merriweather', serif;
+    font-size: x-large;
+    background-image: url("/temp1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+h1 {
+	text-align: center;	
+}
+p {
+	text-align: center;
+}
+
+form {
+   margin-top: 100px;
+   width: 90%;
+   max-width: 800px;
+   max-height: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+   color: rgb(1, 14, 13);
+   border-radius: 20px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 5%;
+}
+input{
+
+ color: rgb(41, 46, 77);
+ 
+}
+
+fieldset{
+    border-radius: 20px;
+    border-style:solid;
+    border-color: black;
+}
+
+input text{  
+    width: 350px;
+    padding: 8px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;         
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    padding: 30px;
+}
+
+#celsius,#fahrenheit{
+    width: 350px;
+    padding: 10px;
+    border-radius: 50px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;     
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #30d5eb6e;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(244, 243, 248);
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #acda61;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
